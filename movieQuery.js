@@ -8,13 +8,16 @@ var movieList = [
 ];
 
 function getMovieTitle( index ){
+ return  movieList[index].title;
   //add code
 }
 
 console.log(getMovieTitle(3));
 
 function addMovie( movie ){
-  //add code
+
+  movieList.push({ title: "Beauty and the beast”, year: “2017", length: 138, rating: "7.2", genre: "sci-fi" });
+  return console.log(movieList);
 }
 
 var newMovie = {};
